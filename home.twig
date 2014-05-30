@@ -17,18 +17,30 @@
 </div>
 
 <div class="featurebtn-container">
-      
+              <a href="#anchor">
+            <div class="featurebtn">
+            </div>
+        </a>
 </div>
 
 <div class="navbar clearfix">
+<a name="anchor"></a>
     {{widget('extendednavigation', 'navigationheader', {})|raw}}
 </div>
+
+<div class="canvas">
+  <div class="page-wrap">
 <div class="mainzone wrapper clearfix">
     {{zone('main')|raw}}
 </div>
+</div>
+</div>
           
 <footer class="bk-footer">
-      
+    <div class="footer-container">
+    {{widget('companyname', 'companyname', {"business": "ATLANTIC"})|raw}}
+      {{widget('companyaddress', 'thisunqiuewidgetname', {})|raw}}
+    </div>
 </footer>
 
 {% endblock %}
