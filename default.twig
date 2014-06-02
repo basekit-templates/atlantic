@@ -13,12 +13,22 @@
           </div>
           {{widget('extendednavigation', 'navigationheader', {})|raw}}
       </header> 
+
+<div class="canvas">
+    <div class="page-wrap">
           <div class="wrapper clearfix">
-                  {{zone('main')|raw}}
+              {{zone('main')|raw}}
           </div>
+    </div>
+</div>
               
-          <footer class="bk-footer">
-          </footer>
+<footer class="bk-footer">
+    <div class="footer-container">
+        {{widget('companyname', 'companyname', {"business": "ATLANTIC"})|raw}}
+        {{widget('companyaddress', 'thisunqiuewidgetname', {})|raw}}
+    </div>
+</footer>
+
 </div>
 
 {% endblock %}

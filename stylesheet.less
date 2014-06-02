@@ -251,8 +251,8 @@ header.bk-header {
         }
                 .spare {
                     display: block;
-                    margin: 0 15%;
-                    width:70%;
+                    margin: 0 20%;
+                    width: 60%;
                 }
             }
         }
@@ -458,7 +458,7 @@ footer.bk-footer {
     color:@font-swatch6-color;
 }
 
-.widget.profile span {
+.widget.profile span, .widget.profile p, .widget.profile a {
     color:@font-swatch6-color;
 }
 
@@ -479,7 +479,8 @@ footer.bk-footer {
 }
 
 .widget.socialicons span a:hover, .widget.profile .bk-profile-socialicons span a:hover {
-    background-color:lighten(@color-swatch2,15%);
+    background-color:lighten(@color-swatch3,15%);
+    border-radius:3px;
 }
 
 /* ===============================
@@ -1139,11 +1140,20 @@ blockquote:before {
     .widget .extendednavigation {
         display:block;
         float:none;
+        padding:0;
     }
+
+    .bk-pt-default .widget .extendednavigation ul {
+        display:none;
+    }
+
     .widget .extendednavigation ul {
         position:relative;
         z-index:99999;
         background-color:@color-swatch3;
+        padding:0;
+        margin-top:50px;
+        display:block;
     }
     .bk-pt-default .widget.menusections {
         margin-top: 0;
@@ -1166,6 +1176,32 @@ blockquote:before {
     }
     .widget .extendednavigation ul li {
         padding:0.5em 0; 
+    }
+    .featurebtn {
+        background-image: image('/images/nav-icon.png');
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60px;
+        margin: 0px auto;
+        display: inline-block;
+    }
+    .widget .extendednavigation a.pull:after {
+        background:none;
+    }
+
+    .bk-pt-default .featurebtn {
+        background-image: image('/images/feature-btn.png');
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60px;
+        margin: 0px auto;
+        display: inline-block;
+    }
+
+     .bk-pt-default .widget .extendednavigation a.pull:after {
+        background-image: image('/images/nav-icon.png');
     }
 }
 
