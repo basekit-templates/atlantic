@@ -45,15 +45,6 @@ h1, h2, h3, h4, h5, p {
     padding: 0 0 10px;
 }
 
-header.bk-header p {
-    font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size;
-}
-
 .page-wrap {
     max-width: 1400px!important;
     margin: 0 auto;
@@ -63,8 +54,6 @@ header.bk-header p {
 .canvas {
     background-color:@color-swatch1;
     width:100%;
-    border-top: 1px solid @color-swatch1;
-    border-bottom: 1px solid @color-swatch1;
 }
 
 .widget.feature .feature-bgimg .content {
@@ -74,19 +63,9 @@ header.bk-header p {
 .navbar {
     width:100%;
 }
-
-.featureimage {
-    width: 100%;
-    height:100%;
-}
    
 .contain {
     position: relative;
-}
-
-#headercolumn1socialicons {
-    float:right;
-    padding:30px 0px;
 }
 
 .page-wrap {
@@ -198,6 +177,12 @@ header.bk-header {
    3. FEATURE
    =============================== */
 
+.featureimage {
+    min-height:400px;
+    background-color:lighten(@color-swatch3,15%);
+    width: 100%;
+    height:100%;
+}
  
 .widget {
     &.feature {
@@ -207,7 +192,7 @@ header.bk-header {
         overflow: hidden;
         height: 100%;
         .feature-bgimg {
-            min-height: 500px; /* height should be in the media query */
+            min-height: 600px; /* height should be in the media query */
             .content {
                 display: table-cell;
                 vertical-align: middle;
@@ -253,6 +238,7 @@ header.bk-header {
                     display: block;
                     margin: 0 20%;
                     width: 60%;
+                    padding-top:50px;
                 }
             }
         }
@@ -267,13 +253,16 @@ header.bk-header {
 }
 
 .featurebtn {
-    background-image:image('/images/feature-btn.png');
     height:60px;
     background-repeat:no-repeat;
     background-position:center;
     width: 60px;
     margin: 0px auto;
     display:inline-block;
+}
+
+.widget.feature .feature-bgimg {
+    height: 600px;
 }
 
 .widget.feature .feature-bgimg .content button {
@@ -343,6 +332,7 @@ header.bk-header {
         padding:16px 2%;
         margin:0px auto;
         display:table;
+        width:100%;
         @media @tablet {
             background-color: transparent;
         }
@@ -860,9 +850,9 @@ button.btn {
    PAYPAL BUTTON
    =============================== */
 
-.widget.paypalbuynow .widget.button.paypal {
+.widget.paypalbuynow .widget.button.paypal, .widget.dropbox button {
     background-color:@color-swatch3;
-    padding:20px 10px 15px 40px;
+    padding:15px 10px 15px 40px;
     border-radius:0;
 }
 
@@ -872,16 +862,15 @@ button.btn {
 
 .widget.tweet a {
     background-color:@color-swatch3;
+    &:hover {
+        background-color:lighten(@color-swatch3,15%);
+    };
 }
 
 /* ===============================
    DROPBOX BUTTON
    =============================== */
 
-.widget.dropbox button {
-    background-color:@color-swatch3;
-    padding:20px 10px 15px 40px;
-}
 
 .widget.dropbox button:hover {
     background-image:image('/images/dropbox-icon.png');
@@ -1057,29 +1046,6 @@ blockquote:before {
     .canvas {
         padding:30px 0px;
     }
-    .headerprofile .header-left .widget.profile{
-        margin:0px auto;
-        display:table;
-        text-align:center;
-    }
-
-    .headerprofile .header-right .widget.profile{
-        margin:0px auto;
-        display:table;
-        float:none;
-        text-align:center;
-    }
-
-    .headerprofile .header-center .widget.profile{
-        margin:0px auto;
-        display:table;
-        float:none;
-        text-align:center;
-    }
-
-    .headerprofile {
-        padding: 0 0 20px 0;
-    }
 
     .widget.feature h2, .widget.feature h3 {
         text-align:center;
@@ -1100,7 +1066,7 @@ blockquote:before {
     .widget .extendednavigation a.pull:after {
         content: "";
         background: image('/images/nav-icon.png') no-repeat; 
-        width: 18px;
+        width: 19px;
         height: 20px;
         display: inline-block;
         position: absolute;
@@ -1109,6 +1075,12 @@ blockquote:before {
         border-radius: 0;
         box-shadow: none;
         margin-top: 20px;
+    }
+
+    .widget .extendednavigation a.pull {
+        top: auto; 
+        margin: 0px auto;
+        left: 20px;
     }
 
     header {
@@ -1153,7 +1125,6 @@ blockquote:before {
         background-color:@color-swatch3;
         padding:0;
         margin-top:50px;
-        display:block;
     }
     .bk-pt-default .widget.menusections {
         margin-top: 0;
@@ -1167,41 +1138,32 @@ blockquote:before {
         z-index: 8000;
         cursor: pointer;
     }
-    .widget .extendednavigation a.pull {
-        top:0;
+    .bk-pt-default .widget .extendednavigation a.pull {
+        top:15px;
     }
     .bk-pt-default .widget .extendednavigation ul {
-        margin-top: 34px;
+        margin-top: 50px;
         padding:0;
     }
     .widget .extendednavigation ul li {
         padding:0.5em 0; 
     }
-    .featurebtn {
-        background-image: image('/images/nav-icon.png');
-        height: 60px;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 60px;
+    .bk-pt-default .widget .extendednavigation a.pull {
+        width: 100%;
         margin: 0px auto;
-        display: inline-block;
-    }
-    .widget .extendednavigation a.pull:after {
-        background:none;
-    }
-
-    .bk-pt-default .featurebtn {
-        background-image: image('/images/feature-btn.png');
-        height: 60px;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 60px;
-        margin: 0px auto;
-        display: inline-block;
+        display: table;
+        left: 0;
     }
 
      .bk-pt-default .widget .extendednavigation a.pull:after {
         background-image: image('/images/nav-icon.png');
+        height:16px;
+        margin: 0px auto;
+    }
+    .widget.feature .feature-bgimg .content h2 {
+        font-size: bkscale(@font-swatch8-font-size,0.6);
+        line-height:bkscale(@font-swatch8-line-height,0.6);
+        letter-spacing:bkscale(@font-swatch2-letter-spacing,0.5);
     }
 }
 
@@ -1237,7 +1199,7 @@ blockquote:before {
     }
     .widget.feature .feature-bgimg .content h2 {
           font-size: bkscale(@font-swatch8-font-size,0.5);
-          line-height:bkscale(@font-swatch8-line-height,0.6);
+          line-height:bkscale(@font-swatch8-line-height,0.5);
           letter-spacing:bkscale(@font-swatch2-letter-spacing,0.5);
     }
     .widget.feature .feature-bgimg .content h3 {
@@ -1305,14 +1267,12 @@ blockquote:before {
     }
     .widget.feature .spare {
         width:80%;
-        margin-top:50px;
-        padding-top:50px;
     }
     .widget.logo img {
         width: 80%;
     }
     .featurebtn-container {
-        margin-top: -120px;
+        margin-top: -200px;
         padding-bottom: 80px;
     }
     .signupform fieldset input {
@@ -1320,6 +1280,9 @@ blockquote:before {
     }
     .widget.profile form fieldset input {
         width:50%;
+    }
+    .mainzone {
+        padding:0;
     }
 
 }
