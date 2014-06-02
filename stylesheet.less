@@ -131,32 +131,9 @@ header.bk-header {
     padding:20px 0px;
 }
 
-.widget.extendednavigation .bk-overlay {
-    position: absolute;
-    right: 0px;
-    left: auto!important;
-    top: 0px;
-    bottom: 0px;
-    z-index: 8000;
-    cursor: pointer;
-    width: 60%;
-    float: right;
-    height: 60px;
-}
-
 .twitter ul li a {
     font-weight:400;
     font-size:@font-swatch4-font-size;
-}
-
-.widget.extendednavigation .bk-overlay {
-    position: absolute!important;
-    right: 0px!important;
-    left: 0px!important;
-    top: 0px!important;
-    bottom: 0px!important;
-    z-index: 8000!important;
-    cursor: pointer!important;
 }
 
 /* ===============================
@@ -797,6 +774,7 @@ button.btn {
     width:70%;
     border:0;
     background-color:darken(@color-swatch1,5%);
+    text-indent:5px;
     @media @tablet {
         width: 90%;
     }
@@ -1202,7 +1180,7 @@ blockquote:before {
 
     .companyheader .companyname a {
           font-size: bkscale(@font-swatch10-font-size,0.9);
-          line-height:bkscale(@font-swatch10-line-height,0.9);
+          line-height:bkscale(@font-swatch10-line-height,0.8);
           padding-bottom:0px;  
     }
 
@@ -1296,6 +1274,9 @@ blockquote:before {
     }
     .mainzone {
         padding:0;
+    }
+    .widget.feature .feature-bgimg {
+        height: 570px;
     }
 
 }
