@@ -1,7 +1,7 @@
 {
     "name":"Atlantic",
-    "thumbnail":"atlantic.png",
-    "screenshot":"atlantic.png",
+    "thumbnail":"hotwok.png",
+    "screenshot":"hotwok.png",
     "templateType":"blog",
     "pageTypes": [
         "home",
