@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, p {
 }
 
 .page-wrap {
-    max-width: 1400px!important;
     margin: 0 auto;
     background: @color-swatch1;
     padding: 0 10%;
@@ -66,19 +65,6 @@ h1, h2, h3, h4, h5, p {
    
 .contain {
     position: relative;
-}
-
-.page-wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: @color-swatch1;
-    padding: 0 5%;
-}
-.canvas {
-    background-color:@color-swatch1;
-    width:100%;
-    border-top: 1px solid @color-swatch1;
-    border-bottom: 1px solid @color-swatch1;
 }
 
 .mainzone {
@@ -311,14 +297,9 @@ header.bk-header {
 
 .widget {
     .extendednavigation {
-        float: none;
-        position: relative;
-        display: inline-block;
         min-height: 50px;
-        padding:16px 8%;
-        margin:0px auto;
-        display:table;
-        width:100%;
+        padding: 7px 13%;
+        margin-top: 20px;
         @media @tablet {
             background-color: transparent;
         }
@@ -399,6 +380,8 @@ header.bk-header {
 
 .widget.companyname {
     display: block;
+    margin:0px auto;
+    display:table;
 }
 
 .widget.companyname a {
@@ -427,6 +410,8 @@ footer.bk-footer {
     background-color: @color-swatch3;
     padding:3em 0;
     text-align:center;
+    border-top: 20px solid lighten(@color-swatch3,10%);
+    margin-top:40px;
 }
 
 .footer-container {
@@ -468,7 +453,8 @@ footer.bk-footer {
    =============================== */
 
 #menu-section-373 {
-    margin:0;
+    width: 100%;
+    margin: 0;
 }
 
 .widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon {
@@ -966,6 +952,31 @@ select::-ms-expand {
     font-size:@font-swatch3-font-size;
 }
 
+.widget.ecomcheckout table tr td .checkout-quantitybtn button {
+    background-color:@color-swatch3;
+    &:hover {
+        background-color:lighten(@color-swatch3,10%);
+    }
+}
+
+.widget.ecombasket .ecombasket-pull {
+    background-color:@color-swatch3;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-top: 1px solid #383c51;
+    &:hover{
+        background-color:lighten(@color-swatch3,10%);
+    };
+}
+
+.ecom-productslist-products button.btn {
+    padding:7px 14px;
+}
+
 /* ===============================
    BLOCKQUOTES
    =============================== */
@@ -1102,8 +1113,8 @@ blockquote:before {
     }
     .widget .extendednavigation {
         display:block;
-        float:none;
         padding:0;
+        margin:0;
     }
 
     .bk-pt-default .widget .extendednavigation ul {
@@ -1155,6 +1166,9 @@ blockquote:before {
         font-size: bkscale(@font-swatch8-font-size,0.6);
         line-height:bkscale(@font-swatch8-line-height,0.6);
         letter-spacing:bkscale(@font-swatch2-letter-spacing,0.5);
+    }
+    .bk-pt-default .canvas {
+        padding:0;
     }
 }
 
@@ -1239,10 +1253,6 @@ blockquote:before {
         padding:0;
     }
 
-    .widget .extendednavigation a.pull:after {
-        top:-2px;
-    }
-
     .clicktocall a {
         background-color:@color-swatch3;
         font-family:@font-swatch7-font-family;
@@ -1258,9 +1268,6 @@ blockquote:before {
     }
     .widget.feature .spare {
         width:80%;
-    }
-    .widget.logo img {
-        width: 80%;
     }
     .featurebtn-container {
         margin-top: -200px;
