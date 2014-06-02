@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5, p {
     float:none;
 }
 
+.widget.logo img {
+    max-width: 190px;
+    max-height: 140px;
+}
+
 .logo, .companyname {
     margin:0px auto;
     display:table;
@@ -142,6 +147,16 @@ header.bk-header {
 .twitter ul li a {
     font-weight:400;
     font-size:@font-swatch4-font-size;
+}
+
+.widget.extendednavigation .bk-overlay {
+    position: absolute!important;
+    right: 0px!important;
+    left: 0px!important;
+    top: 0px!important;
+    bottom: 0px!important;
+    z-index: 8000!important;
+    cursor: pointer!important;
 }
 
 /* ===============================
@@ -329,7 +344,7 @@ header.bk-header {
         position: relative;
         display: inline-block;
         min-height: 50px;
-        padding:16px 2%;
+        padding:16px 8%;
         margin:0px auto;
         display:table;
         width:100%;
@@ -342,6 +357,10 @@ header.bk-header {
 .widget .extendednavigation ul li a:hover {
     color:@font-swatch6-color;
     text-decoration: underline;
+}
+
+.widget .extendednavigation ul li.folder {
+    padding:5px 0px;
 }
 
 .widget .extendednavigation ul li.folder .text {
