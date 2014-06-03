@@ -1,7 +1,7 @@
 {
     "name":"Atlantic",
-    "thumbnail":"hotwok.png",
-    "screenshot":"hotwok.png",
+    "thumbnail":"atlantic.png",
+    "screenshot":"atlantic.png",
     "templateType":"blog",
     "pageTypes": [
         "home",
@@ -20,46 +20,46 @@
             "color1":"#ffffff",
             "color2":"#aaaaaa",
             "color3":"#383c51",
-            "color4":"#aaaaaa",
+            "color4":"#000000",
             "color5":"#aaaaaa",
             "color6":"#000000",
             "color7":"#000000"
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#aaaaaa",
-            "color3":"#905757",
-            "color4":"#aaaaaa",
-            "color5":"#aaaaaa",
-            "color6":"#905757",
-            "color7":"#905757"
+            "color2":"#841c2f",
+            "color3":"#841c2f",
+            "color4":"#000000",
+            "color5":"#3c4a55",
+            "color6":"#841c2f",
+            "color7":"#ffffff"
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#aaaaaa",
-            "color3":"#739057",
-            "color4":"#aaaaaa",
-            "color5":"#aaaaaa",
-            "color6":"#739057",
-            "color7":"#739057"
+            "color2":"#4F7391",
+            "color3":"#4F7391",
+            "color4":"#000000",
+            "color5":"#3c4a55",
+            "color6":"#4F7391",
+            "color7":"#ffffff"
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#aaaaaa",
-            "color3":"#905788",
-            "color4":"#aaaaaa",
-            "color5":"#aaaaaa",
-            "color6":"#905788",
-            "color7":"#905788"
+            "color2":"#73AD5C",
+            "color3":"#73AD5C",
+            "color4":"#000000",
+            "color5":"#757575",
+            "color6":"#73AD5C",
+            "color7":"#ffffff"
         },
         "Swatch 5": {
             "color1":"#ffffff",
-            "color2":"#aaaaaa",
-            "color3":"#D50761",
-            "color4":"#aaaaaa",
-            "color5":"#aaaaaa",
-            "color6":"#D50761",
-            "color7":"#D50761"
+            "color2":"#4BA5A1",
+            "color3":"#4BA5A1",
+            "color4":"#000000",
+            "color5":"#3c4a55",
+            "color6":"#4BA5A1",
+            "color7":"#ffffff"
         }
     },
     "fontSwatch": {
@@ -69,7 +69,7 @@
             "font-size": "32px",
             "font-weight": "400",
             "line-height": "38px",
-            "color": "@color-swatch7",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
@@ -77,7 +77,7 @@
             "font-size": "26px",
             "font-weight": "400",
             "line-height": "32px",
-            "color": "@color-swatch7",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
@@ -85,7 +85,7 @@
             "font-size": "22px",
             "font-weight": "400",
             "line-height": "30px",
-            "color": "@color-swatch7",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font4": {
@@ -93,7 +93,7 @@
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "26px",
-            "color": "@color-swatch7",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font5": {

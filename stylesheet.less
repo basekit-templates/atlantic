@@ -119,7 +119,7 @@ header.bk-header {
 
 .twitter ul li a {
     font-weight:400;
-    font-size:@font-swatch4-font-size;
+    font-size:@font-swatch5-font-size;
 }
 
 /* ===============================
@@ -404,144 +404,6 @@ header.bk-header {
 }
 
 /* ===============================
-   7. FOOTER
-  =============================== */
-
-footer.bk-footer {
-    min-height: 100px;
-    background-color: @color-swatch3;
-    padding:3em 0;
-    text-align:center;
-    border-top: 10px solid lighten(@color-swatch3,10%);
-    margin-top:40px;
-}
-
-.footer-container {
-    width: 70%;
-    margin: 0 15%;
-}
-
-.widget.companyaddress p {
-    color:@font-swatch6-color;
-}
-
-.widget.profile span, .widget.profile p, .widget.profile a {
-    color:@font-swatch6-color;
-}
-
-/* ===============================
-   8. SOCIAL BAR WIDGET / PROFILE DATA
-   =============================== */
-
-.widget.socialicons span a {
-    background-color: @color-swatch3;
-    border-radius: 20px;
-    &:hover {
-        background-color: darken(@color-swatch3,5%);
-    };
-}
-
-.widget.profile .bk-profile-socialicons span a {
-    background-color:transparent;
-}
-
-.widget.socialicons span a:hover, .widget.profile .bk-profile-socialicons span a:hover {
-    background-color:lighten(@color-swatch3,10%);
-    border-radius:3px;
-}
-
-/* ===============================
-  MENU
-   =============================== */
-
-#menu-section-373 {
-    width: 100%;
-    margin: 0;
-}
-
-.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon {
-    background-color: @color-swatch3;
-    color: @font-swatch7-color;
-    padding: 5px;
-    border-radius:5px;
-}
-
-/* ===============================
-  BLOG
-   =============================== */
-
-.widget {
-    &.blogpostlist {
-        .blog-post-item {
-            border-bottom: 1px dotted @color-swatch5;
-        }
-
-    }
-}
-
-.blog-post-item {
-    margin: 1.5em 0;
-    padding-bottom: 1em;
-    h2 {
-        a {
-            font-family: @font-swatch2-font-family;
-            font-size: @font-swatch2-font-size;
-            font-weight: @font-swatch2-font-weight;
-            line-height: @font-swatch2-line-height;
-            color: @font-swatch2-color;
-            letter-spacing: @font-swatch2-letter-spacing;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-.blog-post-metadata {
-    background-color: transparent;
-    background-image: none;
-    margin-top: 0;
-    text-align: left;
-}
-
-.blog-list-footer {
-    background-color: transparent;
-    background-image: none;
-}
-
-.blog-post-more-link {
-    float: left;
-    width: 100%;
-}
-
-/* BLOG SEARCH */
-.blogsearch {
-    form {
-        button {
-            padding: 10px 20px 6px 20px;
-            color: @font-swatch7-color;
-            font-size: @font-swatch6-font-size;
-            font-weight: @font-swatch6-font-weight;
-            line-height: @font-swatch6-line-height;
-            background-color: @font-swatch7-background-color;
-            border: none;
-        }
-    }
-}
-
-.blog-post-feature-image-wrap {  /* Blog post feature image */
-           background-size: cover;
-           background-repeat: no-repeat;
-           background-position: center;
-           height: 250px;
-           margin-bottom: 20px;
-           img {
-               display: none;
-           }
-       }
-
-/* ===============================
    SLIDESHOW WIDGET
    =============================== */
 
@@ -647,6 +509,7 @@ footer.bk-footer {
 
 .widget.button button {
     background:@color-swatch3;
+    padding: 10px 15px;
     &:hover {
         background: darken(@color-swatch3, 5%);
     }
@@ -736,7 +599,7 @@ border-radius: 3px;
 }
 
 .widget.contactform form fieldset button.btn {
-  padding: 15px 30px;
+  padding: 10px 25px;
   border-top:1px solid @color-swatch3;
   text-decoration: none;
   background-color: @color-swatch3;
@@ -884,6 +747,129 @@ button.btn, .widget.paypalbuynow .widget.button.paypal, .widget.tweet a, .widget
 }
 
 /* ===============================
+   7. FOOTER
+  =============================== */
+
+footer.bk-footer {
+    min-height: 100px;
+    background-color: @color-swatch3;
+    padding:3em 0;
+    text-align:center;
+    border-top: 10px solid lighten(@color-swatch3,10%);
+    margin-top:40px;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.widget.companyaddress p {
+    color:@font-swatch6-color;
+}
+
+.widget.profile span, .widget.profile p, .widget.profile a {
+    color:@font-swatch6-color;
+}
+
+/* ===============================
+   8. SOCIAL BAR WIDGET / PROFILE DATA
+   =============================== */
+
+.widget.socialicons span a {
+    background-color: @color-swatch3;
+    border-radius: 20px;
+    &:hover {
+        background-color: darken(@color-swatch3,5%);
+    };
+}
+
+.widget.profile .bk-profile-socialicons span a {
+    background-color:transparent;
+}
+
+.widget.socialicons span a:hover, .widget.profile .bk-profile-socialicons span a:hover {
+    background-color:lighten(@color-swatch3,10%);
+    border-radius:3px;
+}
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.widget {
+    &.blogpostlist {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        button {
+            padding: 10px 20px 6px 20px;
+            color: @font-swatch7-color;
+            font-size: @font-swatch6-font-size;
+            font-weight: @font-swatch6-font-weight;
+            line-height: @font-swatch6-line-height;
+            background-color: @font-swatch7-background-color;
+            border: none;
+        }
+    }
+}
+
+.blog-post-feature-image-wrap {  /* Blog post feature image */
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           height: 250px;
+           margin-bottom: 20px;
+           img {
+               display: none;
+           }
+       }
+
+
+/* ===============================
    Ecom
    =============================== */
 
@@ -977,6 +963,43 @@ select::-ms-expand {
 
 .ecom-productslist-products button.btn {
     padding:7px 14px;
+}
+
+.ecom-productlist-info {
+    text-align:center;
+}
+
+/* ===============================
+   MENU
+   =============================== */
+
+.menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */  
+    padding: 2em 2em 0;
+    margin-bottom: 2em;
+    position: relative;
+    background-color: fadeout(@color-swatch4, 95%);
+}
+
+.menu-item.menu-item-promoted {
+    padding: 1.5em!important;
+    background-color: fadeout(@color-swatch4, 95%);
+}
+
+#menu-section-373, #menu-section-374 {
+    width: 100%;
+    margin: 0;
+}
+
+.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon {
+    background-color: @color-swatch3;
+    color: @font-swatch7-color;
+    padding: 5px;
+    border-radius:5px;
+}
+
+.menu .menu-subsection {
+    margin:0;
+    padding:0;
 }
 
 /* ===============================
@@ -1170,6 +1193,9 @@ blockquote:before {
         letter-spacing:bkscale(@font-swatch2-letter-spacing,0.5);
     }
     .bk-pt-default .canvas {
+        padding:0;
+    }
+    .page-wrap {
         padding:0;
     }
 }
