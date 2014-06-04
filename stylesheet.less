@@ -617,11 +617,13 @@ header.bk-header {
   float:left;
 }
 
-button.btn {
+button.btn, .widget.ecomcheckout .checkout-order-button, 
+.widget.ecombasket .ecombasket-pull, 
+.widget.contactform form fieldset button.btn {
     background-color:@color-swatch3;
-    padding:15px;
+    padding:10px 15px;
     color: @font-swatch7-color;
-    border-radius:0;
+    border-radius:3px;
 }
 
 /* ===============================
@@ -684,14 +686,12 @@ button.btn {
     font-weight:@font-swatch7-font-weight;
     color: @font-swatch7-color;
     background-color:@color-swatch3;
-    padding: 9px 20px 7px 20px;
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
+    padding: 9px 15px;
     border-radius: 3px;
     border-top:1px solid @color-swatch3;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
 }
 
 .blog-search-input {
@@ -715,6 +715,7 @@ button.btn {
    =============================== */
 
 .widget.tweet a {
+    padding:15px 10px 15px 40px;
     background-color:@color-swatch3;
     &:hover {
         background-color:lighten(@color-swatch3,10%);
@@ -740,7 +741,7 @@ input, .blog-search-submit-button, .widget.profile form fieldset input, .signupf
     border-radius:3px;
 }
 
-button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.paypal, .widget.tweet a, .widget.dropbox button, .blogsearch form button {
+button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.paypal, .blog-search-submit-button,.widget.tweet a, .widget.dropbox button, .blogsearch form button {
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -757,6 +758,7 @@ button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.pay
   -o-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
+
 
 /* ===============================
    7. FOOTER
