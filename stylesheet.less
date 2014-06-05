@@ -767,7 +767,7 @@ button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.pay
 footer.bk-footer {
     min-height: 100px;
     background-color: @color-swatch3;
-    padding:3em 0;
+    padding:2em 0 1em;
     text-align:center;
     border-top: 10px solid lighten(@color-swatch3,10%);
     margin-top:40px;
@@ -802,8 +802,17 @@ footer.bk-footer {
     background-color:transparent;
 }
 
+footer .widget.profile .bk-profile-socialicons span a {
+    background-color:transparent;
+}
+
 .widget.socialicons span a:hover, .widget.profile .bk-profile-socialicons span a:hover {
     background-color:lighten(@color-swatch3,10%);
+}
+
+footer .widget.profile .bk-profile-socialicons span a:hover {
+    background-color:lighten(@color-swatch3,10%);
+    border-radius:3px;
 }
 
 /* ===============================
@@ -977,6 +986,10 @@ select::-ms-expand {
 
 .ecom-productlist-info {
     text-align:center;
+}
+
+.widget.ecomfeaturedproducts .ecom-featuredproducts-wrap .ecom-featuredproducts-product .ecom-featuredproducts-image-wrap {
+    background-color:darken(@color-swatch1,5%);
 }
 
 /* ===============================
