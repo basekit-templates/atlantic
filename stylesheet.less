@@ -47,7 +47,6 @@ h1, h2, h3, h4, h5, p {
 
 .page-wrap {
     margin: 0 auto;
-    background: @color-swatch1;
     padding: 0 10%;
 }
 .canvas {
@@ -334,7 +333,7 @@ header.bk-header {
 }
 
 .widget .extendednavigation ul li.folder:after {
-    display: none;
+    border-top-color: @color-swatch1;
 }
 
 .bk-pt-default .widget.extendednavigation {
@@ -545,15 +544,12 @@ header.bk-header {
 }
 
 .widget.contactform fieldset label {
-    width: 100%;
-    float: left;
     font-family:@font-swatch4-font-family;
     font-size:font-swatch4-font-size;
     font-weight:@font-swatch4-font-weight;
     line-height:@font-swatch4-line-height;
     color:@color-swatch3;
     letter-spacing: @font-swatch4-letter-spacing;
-    display:none;
 }
 
 .widget.contactform form fieldset input {
@@ -592,6 +588,10 @@ header.bk-header {
 
 .widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
   outline: none;
+}
+
+.contactform label {
+    width:auto;
 }
 
 /* PLACEHOLDER CSS */
@@ -770,7 +770,6 @@ footer.bk-footer {
     padding:2em 0 1em;
     text-align:center;
     border-top: 10px solid lighten(@color-swatch3,10%);
-    margin-top:40px;
 }
 
 .footer-container {

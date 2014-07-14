@@ -1,4 +1,4 @@
-Hot Wok
+Atlantic
 =====
 
-BaseKit Menu Template
+BaseKit Standard Template
