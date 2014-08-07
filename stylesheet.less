@@ -326,6 +326,7 @@ header.bk-header {
 
 .widget .extendednavigation ul li.folder {
     padding:5px 0px;
+    margin-right: 0;
 }
 
 .widget .extendednavigation ul li.folder .text {
@@ -367,6 +368,7 @@ header.bk-header {
 
 .widget .extendednavigation ul li:hover ul {
     background-color:@color-swatch3;
+    margin: 2px 0 0;
 }
 
 .widget .extendednavigation ul li a {
@@ -526,6 +528,10 @@ header.bk-header {
     &:hover {
         background: darken(@color-swatch3, 5%);
     }
+}
+
+.widget.tweet a, .widget.button .btn {
+    margin: 1em 0;
 }
 
 /* ===============================
@@ -722,6 +728,7 @@ button.btn, .widget.ecomcheckout .checkout-order-button,
    =============================== */
 
 .widget.tweet a {
+    display: inline-block;
     padding:15px 10px 15px 40px;
     background-color:@color-swatch3;
     &:hover {
