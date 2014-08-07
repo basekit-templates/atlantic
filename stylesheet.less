@@ -71,6 +71,43 @@ h1, h2, h3, h4, h5, p {
 }
 
 /* ===============================
+   2. HEADER
+   =============================== */
+
+.companyheader {
+    display: block;
+    padding: 0;
+    margin: 6px 0 0;
+    margin: 0px auto;
+    display: table;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+    display: block;
+    margin:0px auto;
+    display:table;
+}
+
+.widget.companyname a {
+    text-shadow: 1px 1px 1px #B3B3B3;
+}
+
+.widget.companyname a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* LOGO */
+
+.widget.logo {
+    display: block;
+    width:100%;
+    margin-right:10px;
+}
+
+/* ===============================
    3. CUSTOM CSS
    =============================== */
 
@@ -236,22 +273,6 @@ header.bk-header {
     }
 }
 
-.featurebtn-container {
-    position: relative;
-    margin-top: -164px;
-    padding-bottom: 90px;
-    text-align: center;
-}
-
-.featurebtn {
-    height:60px;
-    background-repeat:no-repeat;
-    background-position:center;
-    width: 60px;
-    margin: 0px auto;
-    display:inline-block;
-}
-
 .widget.feature .feature-bgimg {
     height: 600px;
 }
@@ -275,6 +296,43 @@ header.bk-header {
      display: table;
      text-align:center;
      text-shadow: 1px 1px 1px #B3B3B3;
+}
+
+// Feature Section
+.feature-section {
+    position: relative;
+}
+
+.bk-tpl-hidden ~ .navbar {
+    position: relative;
+    bottom: auto;
+}
+
+.navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    @media @tablet {
+        background-color: transparent;
+        bottom: inherit;
+        top: -60px;
+        .left {
+            float: left;
+            width: 100%;
+        }
+        .widget.profile {
+            float:none;
+            text-align:right;
+        }
+        .widget.profile {
+            float: none;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+        }
+    }
 }
 
 /* ===============================
@@ -304,15 +362,11 @@ header.bk-header {
 .nav-header {
     line-height: 0;
 }
-.widget.extendednavigation {
-    background-color:rgba(0,0,0,0.1);
-}
 
 .widget {
     .extendednavigation {
         min-height: 50px;
-        padding: 7px 13%;
-        margin-top: 20px;
+        padding: 2px 13%;
         @media @tablet {
             background-color: transparent;
         }
@@ -362,17 +416,13 @@ header.bk-header {
   text-decoration: underline;
 }
 
-.widget .extendednavigation ul.align-center li:hover li {
-    text-align:left;
-}
-
 .widget .extendednavigation ul li:hover ul {
-    background-color:@color-swatch3;
+    background-color:lighten(@color-swatch3,10%);
     margin: 2px 0 0;
 }
 
 .widget .extendednavigation ul li a {
-    padding:5px 20px;
+    padding:15px 20px;
 }
 
 .widget .extendednavigation ul li {
@@ -381,41 +431,8 @@ header.bk-header {
     display: inline-block;
 }
 
-/* ===============================
-   HEADER
-   =============================== */
-
-.companyheader {
-    display: block;
-    padding: 0;
-    margin: 6px 0 0;
-    margin: 0px auto;
-    display: table;
-}
-
-/* COMPANY NAME */
-
-.widget.companyname {
-    display: block;
-    margin:0px auto;
-    display:table;
-}
-
-.widget.companyname a {
-    text-shadow: 1px 1px 1px #B3B3B3;
-}
-
-.widget.companyname a:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/* LOGO */
-
-.widget.logo {
-    display: block;
-    width:100%;
-    margin-right:10px;
+.widget .extendednavigation ul li:hover ul li a {
+    padding:5px 0px;
 }
 
 /* ===============================
@@ -773,6 +790,11 @@ button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.pay
   transition: background-color 0.15s ease-in-out;
 }
 
+input {
+    border:0;
+    background-color:darken(@color-swatch1,3%);
+}
+
 
 /* ===============================
    7. FOOTER
@@ -964,7 +986,6 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
     appearance: none;
     outline: none !important;
     -moz-outline-style: none;
-    border: 1px solid @color-swatch5;
     position: relative;
     background: transparent;
     padding: 10px 23px 10px 10px;
@@ -977,7 +998,11 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-
+    background-color:darken(@color-swatch1,3%);
+        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    border:0;
 }
 
 .widget.ecomcheckout .delivery select {
@@ -986,7 +1011,6 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
     appearance: none;
     outline: none !important;
     -moz-outline-style: none;
-    border: 1px solid @color-swatch5;
     position: relative;
     background: transparent;
     padding: 10px 23px 10px 10px;
@@ -999,6 +1023,11 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    background-color:darken(@color-swatch1,3%);
+        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    border:0;
 }
 
 select {
@@ -1007,7 +1036,6 @@ select {
     appearance: none;
     outline: none !important;
     -moz-outline-style: none;
-    border: 1px solid @color-swatch5;
     position: relative;
     background: transparent;
     padding: 10px 23px 10px 10px;
@@ -1019,6 +1047,11 @@ select {
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px; 
     border-radius: 3px;
+    background-color:darken(@color-swatch1,3%);
+        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    border:0;
 }
 
 select::-ms-expand {
@@ -1067,6 +1100,10 @@ select::-ms-expand {
 
 .widget.ecomfeaturedproducts .ecom-featuredproducts-wrap .ecom-featuredproducts-product .ecom-featuredproducts-image-wrap {
     background-color:darken(@color-swatch1,5%);
+}
+
+.widget.ecomcheckout .delivery .delivery-title {
+  margin-top:30px;
 }
 
 // Ecom Basket Summary
@@ -1163,6 +1200,7 @@ select::-ms-expand {
       margin-top: 25px;
       border:1px solid @color-swatch7;
       padding:20px;
+      border-radius:3px;
     }
   }
 }
@@ -1424,6 +1462,16 @@ blockquote:before {
     }
     .widget.ecomproductslist label {
         display:block;
+    }
+    .widget.ecomproductslist label {
+        display:block;
+    }
+    .widget.extendednavigation ul li {
+        padding:0;
+    }
+
+    .widget.extendednavigation ul li a {
+        padding: 5px 0;
     }
 }
 

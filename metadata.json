@@ -3,7 +3,9 @@
     "thumbnail":"atlantic.png",
     "screenshot":"atlantic.png",
     "templateType":"standard",
-    
+    "pageTypes": [
+        "home"
+    ],
     "tags": {
     "en": ["clean", "nature", "white", "modern", "blog", "travel", "sea", "luxury", "professional", "simple", "sans serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
