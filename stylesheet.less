@@ -4,7 +4,7 @@
 
 @import "@{templateCommon}/basekit-bootstrap.less";
 
-/* 
+/*
 
 Table of Contents -
 
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, p {
 .navbar {
     width: 100%;
 }
-   
+
 .contain {
     position: relative;
 }
@@ -213,7 +213,7 @@ header.bk-header {
     width: 100%;
     height: 100%;
 }
- 
+
 .widget {
     &.feature {
         display: table;
@@ -252,7 +252,7 @@ header.bk-header {
                     text-align:center;
                 }
             }
-            h3  { 
+            h3  {
                 display: block;
                 margin-top: 20px;
                 text-align: center;
@@ -340,12 +340,18 @@ header.bk-header {
    =============================== */
 
 .bk-pt-default .menu-container {
-    background-color: fadeout(@color-swatch4, 95%);   
+    background-color: fadeout(@color-swatch4, 95%);
 }
 
 /* ===============================
    EXTENDED NAVIGATION
    =============================== */
+
+// Reset Alignment Floating
+div.widget.extendednavigation .extendednavigation ul.align-right, div.widget.extendednavigation .extendednavigation ul.align-right,
+div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.extendednavigation .extendednavigation ul.align-left {
+    float: none !important;
+}
 
 .tabletmob-nav {
     display: none;
@@ -588,11 +594,11 @@ header.bk-header {
     text-indent: 12px;
     margin-bottom: 20px;
     background-color:darken(@color-swatch1,3%);
-    -webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.5); 
-    -moz-box-shadow: 0px 1px rgba(255, 255, 255, 0.5); 
-    box-shadow: 0px 1px rgba(255, 255, 255, 0.5); 
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
+    -webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
 }
 
@@ -643,8 +649,8 @@ header.bk-header {
   float:left;
 }
 
-button.btn, .widget.ecomcheckout .checkout-order-button, 
-.widget.ecombasket .ecombasket-pull, 
+button.btn, .widget.ecomcheckout .checkout-order-button,
+.widget.ecombasket .ecombasket-pull,
 .widget.contactform form fieldset button.btn {
     background-color:@color-swatch3;
     padding:10px 15px;
@@ -778,18 +784,18 @@ button.btn, .widget.ecomcheckout .checkout-order-button,
 }
 
 input, .blog-search-submit-button, .widget.profile form fieldset input, .signupform fieldset input, .widget.contactform form fieldset textarea, .widget.contactform form fieldset input  {
-    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
-    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
     border-radius:3px;
 }
 
 button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.paypal, .blog-search-submit-button,.widget.tweet a, .widget.dropbox button, .blogsearch form button {
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     border-top:1px solid @color-swatch3;
 }
@@ -1017,8 +1023,8 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background-color:darken(@color-swatch1,3%);
-        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
-    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
     border:0;
 }
@@ -1033,8 +1039,8 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background-color:darken(@color-swatch1,3%);
-        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
-    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
     border:0;
 }
@@ -1046,12 +1052,12 @@ select {
     background: transparent;
     padding: 10px 23px 10px 10px;
     background-position-x: 95%;
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     background-color:darken(@color-swatch1,3%);
-        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5); 
-    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); 
+        -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
     border:0;
     height: 40px;
@@ -1099,11 +1105,11 @@ select {
 }
 
 .btn.ecom-product-go-to-checkout-btn {
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2); 
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     border-top:1px solid @color-swatch3;
     padding: 10px 15px;
@@ -1153,7 +1159,7 @@ select {
       padding: 0px;
       margin:0px 0px 30px 0px;
     }
-    tr:first-child { 
+    tr:first-child {
           outline: 1px solid darken(@color-swatch1,10%);
             background-color: darken(@color-swatch1,4%);
             -webkit-border-top-left-radius: 4px;
@@ -1358,7 +1364,7 @@ select {
     width: auto;
 }
 
-.menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */  
+.menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */
     padding: 2em 2em 0;
     margin-bottom: 2em;
     position: relative;
@@ -1424,7 +1430,7 @@ blockquote:before {
 
     .widget .extendednavigation {
         max-width:100%;
-    }  
+    }
 
     .widget.extendednavigation ul.align-right li.folder {
         background-position: 12px center;
@@ -1488,7 +1494,7 @@ blockquote:before {
 
     .widget .extendednavigation a.pull:after {
         content: "";
-        background: image('/images/nav-icon.png') no-repeat; 
+        background: image('/images/nav-icon.png') no-repeat;
         width: 19px;
         height: 20px;
         display: inline-block;
@@ -1501,7 +1507,7 @@ blockquote:before {
     }
 
     .widget .extendednavigation a.pull {
-        top: auto; 
+        top: auto;
         margin: 0px auto;
         left: 20px;
     }
@@ -1566,7 +1572,7 @@ blockquote:before {
         left:0;
     }
     .widget .extendednavigation ul li {
-        padding:0.5em 0; 
+        padding:0.5em 0;
     }
     .widget .extendednavigation a.pull {
         top: 0px;
@@ -1642,7 +1648,7 @@ blockquote:before {
     .companyheader .companyname a {
           font-size: bkscale(@font-swatch10-font-size,0.9);
           line-height:bkscale(@font-swatch10-line-height,0.8);
-          padding-bottom:0px;  
+          padding-bottom:0px;
     }
 
     .bk-content-text p {
@@ -1707,7 +1713,7 @@ blockquote:before {
         color:@font-swatch7-color;
         line-height:@font-swatch7-line-height;
         letter-spacing: @font-swatch7-letter-spacing;
-        font-size: @font-swatch7-font-size; 
+        font-size: @font-swatch7-font-size;
     }
 
     .clicktocall a:hover {
