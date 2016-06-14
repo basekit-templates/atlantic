@@ -1,7 +1,7 @@
 {
     "name":"Atlantic",
     "thumbnail":"atlantic.png",
-    "screenshot":"atlantic.png",
+    "screenshot":"atlantic-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": [
         "home"
