@@ -567,7 +567,6 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    text-align:center;
     margin-bottom:20px;
 }
 
@@ -604,7 +603,8 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 }
 
 .widget.contactform form fieldset textarea,
-.fonectacontactform textarea {
+.fonectacontactform textarea,
+.advancedcontactform textarea {
     width: 100%;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
@@ -643,7 +643,8 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
     color:    @color-swatch5;
 }
 
-.widget.contactform form fieldset button.btn {
+.widget.contactform form fieldset button.btn,
+.advancedcontactform button {
   padding: 10px 25px;
   border-top:1px solid @color-swatch3;
   text-decoration: none;
@@ -653,7 +654,8 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 
 button.btn, .widget.ecomcheckout .checkout-order-button,
 .widget.ecombasket .ecombasket-pull,
-.widget.contactform form fieldset button.btn {
+.widget.contactform form fieldset button.btn,
+.advancedcontactform button {
     background-color:@color-swatch3;
     padding:10px 15px;
     color: @font-swatch7-color;
@@ -663,6 +665,30 @@ button.btn, .widget.ecomcheckout .checkout-order-button,
 .widget.contactform form fieldset button.btn, .widget.profile form button, .signupform fieldset button, .blogsearch form button, .blog-search-submit-button, .ecom-productslist-products button.btn, .widget.ecomproduct .ecom-product .btn {
     @media @mobile {
         width: 100%;
+    }
+}
+
+// Advanced Contact Form
+.advancedcontactform {
+    .label {
+        margin-bottom: 10px;
+    }
+    .input {
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    select {
+        margin-top: 10px;
+        background-position-x: 99%;
+    }
+    .input--checkbox,
+    .input--radio {
+        box-shadow: none;
+    }
+    button {
+        margin-top: 10px;
     }
 }
 
@@ -785,15 +811,26 @@ button.btn, .widget.ecomcheckout .checkout-order-button,
     background-size: 22px;
 }
 
-input, .blog-search-submit-button, .widget.profile form fieldset input, .signupform fieldset input, .widget.contactform form fieldset textarea, .widget.contactform form fieldset input,
-.fonectacontactform textarea  {
+input, .blog-search-submit-button, 
+.widget.profile form fieldset input, 
+.signupform fieldset input, 
+.widget.contactform form fieldset textarea, 
+.widget.contactform form fieldset input,
+.fonectacontactform textarea, 
+.advancedcontactform textarea  {
     -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
     -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
     border-radius:3px;
 }
 
-button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.paypal, .blog-search-submit-button,.widget.tweet a, .widget.dropbox button, .blogsearch form button {
+button.btn, 
+.advancedcontactform button, 
+.signupform fieldset button, 
+.widget.paypalbuynow .widget.button.paypal, 
+.blog-search-submit-button,.widget.tweet a, 
+.widget.dropbox button, 
+.blogsearch form button {
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -803,7 +840,14 @@ button.btn, .signupform fieldset button, .widget.paypalbuynow .widget.button.pay
     border-top:1px solid @color-swatch3;
 }
 
-.widget.contactform form fieldset button.btn:hover, button.btn:hover, .signupform fieldset button:hover, .widget.profile form button:hover, .blogsearch form button:hover, .widget.paypalbuynow .widget.button.paypal:hover, .widget.dropbox button:hover, .widget.button button:hover   {
+.widget.contactform form fieldset button.btn:hover, 
+button.btn:hover, 
+.signupform fieldset button:hover, 
+.widget.profile form button:hover, 
+.blogsearch form button:hover, 
+.widget.paypalbuynow .widget.button.paypal:hover, 
+.widget.dropbox button:hover, 
+.widget.button button:hover   {
   background-color: lighten(@color-swatch3,10%);
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
