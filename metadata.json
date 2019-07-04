@@ -1,5 +1,6 @@
 {
     "name":"Atlantic",
+    "versionTenCompatible": 1,
     "thumbnail":"atlantic.png",
     "screenshot":"atlantic-screenshot.jpg",
     "templateType":"standard",
