@@ -13,8 +13,9 @@
 .mainzone.wrapper {
     width: 100%;
     margin: 0;
+    max-width: 100%;
 }
-.main {
+.mainzone {
     padding: 0;
 }
 
@@ -31,7 +32,7 @@
 
 @container-width: 1200px;
 @widget__spacing--first: 30px;
-@widget__spacing--other: 20px;
+@widget__spacing--other: 30px;
 
 
 .empty-zone,
@@ -50,20 +51,12 @@
 .edit #page-zones__main-overlay + .widget:not(.row),
 #page-zones__main > .widget:not(.row):first-child {
     margin-top: @widget__spacing--first;
-
-    @media @tablet {
-        margin-top: 50px;
-    }
 }
 
 
 // Move spacing to last widget in the main zone (not sections)
 #page-zones__main > .widget:not(.row):last-child {
     margin-bottom: @widget__spacing--first;
-
-    @media @tablet {
-        margin-bottom: 50px;
-    }
 }
 
 
